@@ -6,3 +6,11 @@
 > converted pounds to kilograms. Rewrite this program, so that the conversion
 > takes place in a separate method which is called by the main method.
 
+# Program execution
+
+E.g.
+
+```bash
+java PoundsToKgsConverter.java
+```
+

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class poundsToKgsConverter {
+public class PoundsToKgsConverter {
 
     private static double poundsToKgs(double pounds) {
 	return pounds * 0.45359237;

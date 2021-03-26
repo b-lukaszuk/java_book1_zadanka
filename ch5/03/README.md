@@ -7,3 +7,10 @@
 > now the instructions for calculating the area and perimeter of the rectangle are
 > contained in two separate methods.
 
+# Program execution
+
+E.g.
+
+```bash
+java Rectangle.java
+```
