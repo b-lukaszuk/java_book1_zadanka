@@ -7,13 +7,13 @@
 > - the first option allows the user to enter a temperature in Celsius and displays
 > the corresponding Fahrenheit temperature;
 >
-> -the second option allows the user to enter a temperature in Fahrenheit and
+> - the second option allows the user to enter a temperature in Fahrenheit and
 > displays the corresponding Celsius temperature;
 >
 > - the third option allows the user to quit.
 >
-> The formulae that you need are as follows, where C represents a Celsius tem-
-> perature and F a Fahrenheit temperature:
+> The formulae that you need are as follows, where C represents a Celsius temperature
+> and F a Fahrenheit temperature:
 >
 > F = (9C/5) + 32
 >

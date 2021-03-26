@@ -4,11 +4,6 @@ import java.util.Scanner;
 // (unless reqired in the task specification)
 public class MoneyExchangeCalculator {
 
-    private static double convertPlnToOther(double amountPln,
-					    double exchngRatio) {
-	return amountPln * exchngRatio;
-    }
-
     private static double getAmtOfPlnFromUser() {
 	Scanner kbd = new Scanner(System.in);
 	double amntOfMoney;
