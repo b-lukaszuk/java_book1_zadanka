@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// the program does not check for the input corectness
+// (unless reqired in the task specification)
 public class PoundsToKgsConverter {
 
     private static double poundsToKgs(double pounds) {

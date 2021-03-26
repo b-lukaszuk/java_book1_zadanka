@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// the program does not check for the input corectness
+// (unless reqired in the task specification)
 public class Rectangle {
 
     private static double getArea(double length, double width) {
@@ -12,7 +14,6 @@ public class Rectangle {
 
     // lOrW - 'l' | 'w' ('w' is the default)
     // l - length, w - width
-    // does not check for args corectness
     private static double askForRectDim(char lOrW) {
 	Scanner kbd = new Scanner(System.in);
 	System.out.printf("Enter %s of the rectangle (in cm)%n",
@@ -23,7 +24,6 @@ public class Rectangle {
 
     // aOrP - 'a' | 'p' ('p' is the default)
     // a - area, p - perimeter
-    // does not check for args corectness
     private static void displayAreaOrPerim(char aOrP,
 					   double length, double width) {
 	Scanner kbd = new Scanner(System.in);

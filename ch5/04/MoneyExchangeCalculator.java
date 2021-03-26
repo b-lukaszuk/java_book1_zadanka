@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-// in general the functions do not check for the input corectness
+// the program does not check for the input corectness
+// (unless reqired in the task specification)
 public class MoneyExchangeCalculator {
 
     private static double convertPlnToOther(double amountPln,
