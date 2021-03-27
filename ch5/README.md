@@ -7,7 +7,7 @@ I'm solving programming exercises that are placed at the end of each chapter in:
 
 Starting from Chapter 5 (other chapters' exercises were too easy)
 
-# Exercises from chapter 5
+# Exercises from chapter 5 - Methods
 
 > 5.10 Programming Exercises
 >

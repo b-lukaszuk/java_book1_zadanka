@@ -1,4 +1,4 @@
-# Exercises from chapter 5
+# Exercises from chapter 5 - Methods
 
 > 5.10 Programming Exercises
 >
