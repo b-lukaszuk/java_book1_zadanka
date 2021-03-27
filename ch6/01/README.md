@@ -17,3 +17,11 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 >
 > (b) add a final instruction into the main method that calls this wasHot
 > method.
+
+# Running program
+
+E.g.
+
+```bash
+java TemperatureReadings3.java
+```
