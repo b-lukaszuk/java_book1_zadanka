@@ -1,2 +1,5 @@
 # ignoruj pliki pdf we wszystkich folderach
 /*.pdf
+
+# ignoruj pliki TAGS (etagsy Emacsa)
+/ch6/02/TAGS
