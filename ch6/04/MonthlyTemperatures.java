@@ -14,8 +14,9 @@ public class MonthlyTemperatures {
 	    System.out.println("[2] Display all");
 	    System.out.println("[3] Display one week");
 	    System.out.println("[4] Display day of the week");
-	    System.out.println("[5] Exit");
-	    System.out.print("Enter choice [1-5]: ");
+	    System.out.println("[5] Display the max temp of the month");
+	    System.out.println("[6] Exit");
+	    System.out.print("Enter choice [1-6]: ");
 	    choice = keyboard.next().charAt(0);
 	    System.out.println();
 	    // process choice by calling additional methods
@@ -28,12 +29,27 @@ public class MonthlyTemperatures {
 		break;
 	    case '4': displayDays(temperature);
 		break;
-	    case '5': System.out.println ("Goodbye");
+	    case '5': System.out.println("Max temp of the month is: " +
+					 maxOf2dArray(temperature));
 		break;
-	    default: System.out.println("ERROR: options 1-5 only!");
+	    case '6': System.out.println ("Goodbye");
+		break;
+	    default: System.out.println("ERROR: options 1-6 only!");
 	    }
-	} while (choice != '5');
+	} while (choice != '6');
     }
+
+    private static double maxOf2dArray(double[][] array2d) {
+	double maxVal = array2d[0][0];
+	for (int r = 0; r < array2d.length; r++) {
+	    for (int c = 0; c < array2d[r].length; c++) {
+		if(array2d[r][c] > maxVal) {
+		    maxVal = array2d[r][c];
+		}
+	    }
+	}
+	return maxVal;
+     }
 
     // method to enter temperatures into the 2d array requires a nested loop
     static void enterTemps(double[][] temperatureIn) {

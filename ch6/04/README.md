@@ -15,3 +15,11 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 > (a) implement the max method that you designed in self-test question 8 above;
 >
 > (b) add a final instruction into the main method that calls this max method.
+
+# Running program
+
+E.g.
+
+```bash
+java MontlhyTemperatures.java
+```
