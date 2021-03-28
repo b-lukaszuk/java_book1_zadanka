@@ -20,3 +20,11 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 >
 > (c) add one more method to display on the screen all those values greater than
 > or equal to the average.
+
+# Running program
+
+E.g.
+
+```bash
+java SomeUsefulArrayMethods.java
+```

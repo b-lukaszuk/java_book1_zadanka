@@ -17,7 +17,7 @@ public class StudentTests {
 	}
 
 	// functional approach, the original list is unmodified
-	// in JS is recommended, here I don't know
+	// in JS it is recommended, here I don't know
 	private static int[] increaseMarksBy(int incrBy, int[] marks) {
 		int[] marks1 = new int[marks.length];
 		for (int i = 0; i < marks.length; i++) {

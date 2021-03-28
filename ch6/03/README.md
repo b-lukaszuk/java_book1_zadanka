@@ -11,3 +11,11 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 
 > 3. Implement a program for entering and displaying student scores that tests your
 > answers to self-test question 4 above.
+
+# Running program
+
+E.g.
+
+```bash
+java StudentTests.java
+```
