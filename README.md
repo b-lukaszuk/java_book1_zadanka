@@ -9,6 +9,9 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 
 # Uzywane IDE
 
-Na razie brak.
+So far none.
+For now I use Emacs (without specific configuration for Java) and openjdk 11.0.10, with time I will most likely install lsp-mode and lsp-java (or something alike).
 
-Poki co uzywam Emacs-a (bez konfiguracji dla JAVA) i openjdk 11.0.10 z czasem pewnie doinstaluje lsp-mode i lsp-java, czy cos takiego.
+Update (29-03-2021).
+I added lsp-mode and lsp-java to my Emacs configuration.
+

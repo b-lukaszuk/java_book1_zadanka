@@ -13,3 +13,11 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 > answers to self-test question 10 above. The program should initialize the word
 > square given in the question and then use the methods displayRow and
 > displayColumn to display all the words in the magic word square.
+
+# Running program
+
+E.g.
+
+```bash
+java MagicSquare.java
+```
