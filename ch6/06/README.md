@@ -16,3 +16,11 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 > pounds to dollars, and should, when it terminates, display the contents of both
 > arrays. Once again, make use of methods in your program to carry out these
 > tasks.
+
+# Running program
+
+E.g.
+
+```bash
+java PricesConverter.java
+```
