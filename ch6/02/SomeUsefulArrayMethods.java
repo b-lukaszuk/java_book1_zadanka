@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-// a menu driven program to test a selection of useful array methods
+// the program does not check for the input corectness
+// (unless reqired in the task specification)
 
+// a menu driven program to test a selection of useful array methods
 public class SomeUsefulArrayMethods {
 
     public static void main(String[] args) {

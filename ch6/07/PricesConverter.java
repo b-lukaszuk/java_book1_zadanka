@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
+// the program does not check for the input corectness
+// (unless reqired in the task specification)
 public class PricesConverter {
-
 
     // variables
     private static int numOfProducts;
