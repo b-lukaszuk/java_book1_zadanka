@@ -2,12 +2,11 @@ import java.util.Scanner;
 
 public class PricesConverter {
 
-    // constants
-    private static final int numOfProducts = 4;
 
     // variables
-    private static double[] prodPricesPndsSterl = new double[numOfProducts];
-    private static double[] prodPricesDollars = new double[numOfProducts];
+    private static int numOfProducts;
+    private static double[] prodPricesPndsSterl;
+    private static double[] prodPricesDollars;
     private static double exchangeRatio;
 
     // methods
@@ -31,6 +30,14 @@ public class PricesConverter {
 	return prices;
      }
 
+    private static double sumPrices(double[] prices) {
+	double sum = 0;
+	for (double price : prices) {
+	    sum += price;
+	}
+	return sum;
+     }
+
     private static double askUserForExchangeRatio() {
 	double exchangeRatio;
 	Scanner kbd = new Scanner(System.in);
@@ -50,8 +57,23 @@ public class PricesConverter {
 	return pricesDollars;
      }
 
+    private static int askForNumOfProducts() {
+	int howMany;
+	Scanner kbd = new Scanner(System.in);
+	System.out.println("How many product prices you want to enter?");
+	howMany = kbd.nextInt();
+	return howMany;
+     }
+
     public static void main(String[] args) {
-	System.out.printf("Hello. Enter the prices of %d products%n%n",
+
+	System.out.println("Hello");
+
+	numOfProducts = askForNumOfProducts();
+	prodPricesPndsSterl = new double[numOfProducts];
+	prodPricesDollars = new double[numOfProducts];
+
+	System.out.printf("Enter the prices of %d products%n%n",
 			  numOfProducts);
 
 	prodPricesPndsSterl = askUserForPrices(numOfProducts);
@@ -65,12 +87,13 @@ public class PricesConverter {
 
 	System.out.println("Prices of products in pound(s) sterling");
 	displayPrices("pound(s) sterling", prodPricesPndsSterl);
-	System.out.println("");
-
+	System.out.printf("Total: %.2f pound(s) sterling%n%n",
+			  sumPrices(prodPricesPndsSterl));
 
 	System.out.println("Prices of products in dollars");
 	displayPrices("dollar(s)", prodPricesDollars);
-	System.out.println("");
+	System.out.printf("Total: %.2f dollars%n%n",
+			  sumPrices(prodPricesDollars));
 
 	System.out.println("That's all. Goodbye!");
     }

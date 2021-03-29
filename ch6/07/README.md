@@ -15,3 +15,11 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 > then sized accordingly;
 >
 > (b) the total cost of the order is displayed in both currencies.
+
+# Running program
+
+E.g.
+
+```bash
+java PricesConverter.java
+```
