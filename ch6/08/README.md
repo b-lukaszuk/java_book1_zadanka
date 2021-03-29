@@ -13,3 +13,11 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 > self-test question 11 above. The program should allow the user to enter numbers
 > into the ragged triangle array and then find the largest number in the array as
 > discussed in the question.
+
+# Running program
+
+E.g.
+
+```bash
+java RaggedTriangle.java
+```
