@@ -6,3 +6,4 @@
 
 # ignoruj pliki *.class
 /ch7/01/classes/*.class
+/ch7/02/customClasses/*.class
