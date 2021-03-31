@@ -3,3 +3,6 @@
 
 # ignoruj pliki TAGS (etagsy Emacsa)
 /ch6/02/TAGS
+
+# ignoruj pliki *.class
+/ch7/01/classes/*.class

@@ -24,6 +24,10 @@ Self-test Question 1d
 > What output would you expect to see from the program above?
 Self-test Question 1d
 
+My answer it will print:
+The area of oblong1 is 12
+The area of oblong2 is 30
+
 >
 > b. Adapt the program above so that the user is able to set the length and height
 > of the two oblongs. Make use of the EasyScanner class to read in the
@@ -36,3 +40,23 @@ E.g.
 ```bash
 java SampleProgram.java
 ```
+
+# Additional info
+
+No need to import class `Oblong` (file `Oblong.java`) if the file is in the same folder as the file `SampleProgram.java` (the main file).
+
+For training I put Oblong class in a different file in a subdirectory, i.e. `classes`
+
+In `Oblong.java` I added `package classes` at the top of the file
+
+Then in shell:
+
+```bash
+javac Oblong # creates file: Oblong.class
+```
+
+Finally, I can import the class into: `SampleProgram.java` by placing in it: `import classes.Oblong;`
+
+I did likewise for `EasyScanner.java`
+
+Solution found on: https://www.w3schools.com/java/java_packages.asp
