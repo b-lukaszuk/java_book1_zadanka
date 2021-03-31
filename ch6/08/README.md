@@ -19,5 +19,5 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 E.g.
 
 ```bash
-java RaggedTriangle.java
+java RaggedArray.java
 ```
