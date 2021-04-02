@@ -1,4 +1,6 @@
 package classes;
+
+// the program from the book
 public class BankAccount {
     // the attributes
     private String accountNumber;

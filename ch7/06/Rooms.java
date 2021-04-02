@@ -1,5 +1,6 @@
 // built-ins import
 import java.util.Scanner;
+import java.util.ArrayList;
 
 // custom defined classes import
 import classes.Oblong;
@@ -21,13 +22,12 @@ public class Rooms {
        return new Oblong(width, length);
      }
 
-    private static Oblong[] askUsrForRoomsDims(int nOfRooms) {
-	Oblong[] rooms;
-	rooms = new Oblong[nOfRooms];
+    private static ArrayList<Oblong> askUsrForRoomsDims(int nOfRooms) {
+	ArrayList<Oblong> rooms = new ArrayList<Oblong>();
 
 	for (int i = 0; i < nOfRooms; i++) {
 	    System.out.printf("--Room %d:%n", i+1);
-	    rooms[i] = aksUsrForSingleRoomDims();
+	    rooms.add(aksUsrForSingleRoomDims());
 	}
 
 	System.out.println("Dimentions of all the rooms have been entered");
@@ -50,17 +50,17 @@ public class Rooms {
 	}
     }
 
-    private static void displayRoomsInfo(Oblong[] roomsIn,
+    private static void displayRoomsInfo(ArrayList<Oblong> roomsIn,
 					 boolean shortVersion) {
-	for (int i = 0; i < roomsIn.length; i++) {
+	for (int i = 0; i < roomsIn.size(); i++) {
 	    System.out.println("--Room " + (i+1) + ":");
-	    displayRoomInfo(roomsIn[i], shortVersion);
+	    displayRoomInfo(roomsIn.get(i), shortVersion);
 	}
      }
 
    public static void main(String[] args) {
        // variables
-       Oblong[] rooms;
+       ArrayList<Oblong> rooms;
        int numOfRooms = 0;
        int roomId = 0;
        Scanner kbd = new Scanner(System.in);
@@ -78,7 +78,7 @@ public class Rooms {
        System.out.println("\nEnter a room number to get full info about it:");
        roomId = kbd.nextInt();
        System.out.println("Room " + (roomId) + ":");
-       displayRoomInfo(rooms[roomId - 1], false);
+       displayRoomInfo(rooms.get(roomId - 1), false);
 
        System.out.println("\nThat's all. Goodbye!");
    }
