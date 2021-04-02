@@ -7,7 +7,7 @@ I'm solving programming exercises that are placed at the end of each chapter in:
 
 Starting from Chapter 5 (other chapters' exercises were too easy)
 
-Update from 02-04-2021, i.e. while reading `Chapter 8. Implementing Classes`, there gonna be more proper classes and code organization (before I did it based on instinct)
+Update from 02-04-2021, i.e. while reading `Chapter 8. Implementing Classes`, there's gonna be a bit better code organization (especially classes -> before I did it based on instinct)
 
 # Uzywane IDE
 

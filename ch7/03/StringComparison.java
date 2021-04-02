@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// the program from the book
 public class StringComparison {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);

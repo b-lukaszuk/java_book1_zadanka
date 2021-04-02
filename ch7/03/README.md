@@ -12,10 +12,10 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 > In order to tackle these exercises make sure that the classes Oblong, Bank-
 > Account and EasyScanner have been copied from the website and placed in
 > the correct directory for your compiler to access them.
-
-
+>
+>
 > 3. Adapt the StringComparison program from Sect. 7.6.3, which compares
-
+>
 > two strings, in the following ways:
 >
 > a. Rewrite the program so that it ignores case;
