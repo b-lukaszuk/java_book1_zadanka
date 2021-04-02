@@ -43,9 +43,9 @@ java SampleProgram.java
 
 # Additional info
 
-No need to import class `Oblong` (file `Oblong.java`) if the file is in the same folder as the file `SampleProgram.java` (the main file).
+It seems that in Java importing classes is not as simple as e.g. in JS/node-js.
 
-For training I put Oblong class in a different file in a subdirectory, i.e. `classes`
+To make it work I put Oblong class in a different file in a subdirectory, i.e. `classes`
 
 In `Oblong.java` I added `package classes` at the top of the file
 
