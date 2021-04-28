@@ -28,6 +28,23 @@ Here I'm gonna put the text from the book without the block quote (for better re
 
 Implement the CircularShape class that was discussed in self-test question 1 above.
 
+> Reminder<br>
+>
+> |------------------------------------|<br>
+> |                                    |<br>
+> | CircularShape                      |<br>
+> |                                    |<br>
+> |------------------------------------|<br>
+> |                                    |<br>
+> | -radius: double                    |<br>
+> |                                    |<br>
+> |------------------------------------|<br>
+> | +CircularShape(double)             |<br>
+> | +setRadius(double)                 |<br>
+> | +calculateArea(): double           |<br>
+> | +calculateCircumference(): double  |<br>
+> |------------------------------------|<br>
+
 ## Task 1b
 
 Add the calculateDiameter method into this class as discussed in self-test question 1d and 1e above.
