@@ -46,3 +46,9 @@ Write a program to test out your class. This program should allow the user to en
 ## Task 1d
 
 Modify the tester program above so that once the information has been displayed the user is able to reset the radius of the circle. The area, circumference and diameter of the circle should then be displayed again.
+
+# Program execution
+
+```bash
+java Main.java
+```

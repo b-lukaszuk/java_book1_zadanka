@@ -56,3 +56,9 @@ You can assume that the fees for the student are set initially to 3000.
 ## Task 2b
 
 Write a tester class to test out your Student class; it should create two or three students (or even better an ArrayList of students), and use the methods of the Student class to test whether they work according to the specification.
+
+# Program execution
+
+```bash
+java Main.java
+```
