@@ -65,9 +65,43 @@ Modify the tester program above so that once the information has been displayed 
 
 ## Task 2a
 
-Write the code for the Student class discussed in self-test question 2 above. You should note that in order to ensure that a double is returned from the calculateAverageMark method you should specifically divide the total of the three marks by 3.0 and not simply by 3 (look back at Chap. 2 to remind yourself why this is the case). 
+Write the code for the Student class discussed in self-test question 2 above.
 
-Another thing to think about is what you choose for the initial values of the marks. If you chose to give each mark an initial value of zero, this could be ambiguous; a mark of zero could mean that the mark simply has not been entered—or it could mean the student actually scored zero in the subject! Can you think of a better initial value? 
+Reminder:
+
+<pre>
+|---------------------------------|
+|                                 |
+| Student                         |
+|                                 |
+|---------------------------------|
+|                                 |
+| -studentNumber: String          |
+| -studentName: String            |
+| -markForMaths: int              |
+| -markForEnglish: int            |
+| -markForScience: int            |
+| -fee: doublle                   |
+|                                 |
+|---------------------------------|
+|                                 |
+| +Student(String, String)        |
+| +getNumber(): String            |
+| +getName(): String              |
+| +enterMarks(int, int, int)      |
+| +getMathsMark(): int            |
+| +getEnglishMark(): int          |
+| +getScienceMark(): int          |
+| +calculateAverageMark(): double |
+| +getFee(): double               |
+| +setFee(double)                 |
+|                                 |
+|---------------------------------|
+</pre>
+
+You should note that in order to ensure that a double is returned from the calculateAverageMark method you should specifically divide the total of the three marks by 3.0 and not simply by 3 (look back at Chap. 2 to remind yourself why this is the case).
+
+Another thing to think about is what you choose for the initial values of the marks. If you chose to give each mark an initial value of zero, this could be ambiguous; a mark of zero could mean that the mark simply has not been entered—or it could mean the student actually scored zero in the subject! Can you think of a better initial value?
 
 You can assume that the fees for the student are set initially to 3000.
 
