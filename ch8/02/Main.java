@@ -19,9 +19,8 @@ public class Main {
     // changes a Student object inplace
     public static void setStudentData(Student someStudent,
 				      int mathMarkIn, int englishMarkIn,
-				      int scienceMarkIn, double feeIn) {
+				      int scienceMarkIn) {
 	someStudent.enterMarks(mathMarkIn, englishMarkIn, scienceMarkIn);
-	someStudent.setFee(feeIn);
     }
 
     public static void main(String[] args) {
@@ -29,10 +28,12 @@ public class Main {
 	students.add(new Student("123", "Tom"));
 	students.add(new Student("234", "Peter"));
 	students.add(new Student("345", "Bill"));
+	// sets students fee
+	Student.setFee(3000);
 
-	setStudentData(students.get(0), 1, 2, 3, 3000);
-	setStudentData(students.get(1), 2, 2, 4, 4000);
-	setStudentData(students.get(2), 3, 4, 5, 5000);
+	setStudentData(students.get(0), 1, 2, 3);
+	setStudentData(students.get(1), 2, 2, 4);
+	setStudentData(students.get(2), 3, 4, 5);
 
 	for (int i = 0; i < 3; i++) {
 	    System.out.printf("----------%n");

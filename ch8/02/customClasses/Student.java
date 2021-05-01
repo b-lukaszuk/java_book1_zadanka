@@ -8,7 +8,7 @@ public class Student {
     private int markForMaths = -999;
     private int markForEnglish = -999;
     private int markForScience = -999;
-    private double fee = 3000;
+    private static double fee = 3000;
 
     public Student(String studentNumberIn, String studentNameIn) {
 	studentNumber = studentNumberIn;
@@ -48,11 +48,11 @@ public class Student {
 	return average;
     }
 
-    public double getFee() {
+    public static double getFee() {
 	return fee;
     }
 
-    public void setFee(double feeIn) {
+    public static void setFee(double feeIn) {
 	fee = feeIn;
     }
 }

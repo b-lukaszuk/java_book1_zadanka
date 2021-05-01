@@ -84,6 +84,7 @@ Reminder:
 | -markForEnglish: int            |
 | -markForScience: int            |
 | -fee: doublle                   |
+| -------------                   |
 |                                 |
 |---------------------------------|
 |                                 |
@@ -96,7 +97,9 @@ Reminder:
 | +getScienceMark(): int          |
 | +calculateAverageMark(): double |
 | +getFee(): double               |
+| -----------------               |
 | +setFee(double)                 |
+| ---------------                 |
 |                                 |
 |---------------------------------|
 </pre>
