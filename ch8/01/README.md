@@ -27,6 +27,7 @@ Reminder<br>
 | -radius: double                    |
 |                                    |
 |------------------------------------|
+|                                    |
 | +CircularShape(double)             |
 | +setRadius(double)                 |
 | +calculateArea(): double           |
