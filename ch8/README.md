@@ -276,7 +276,7 @@ Consider a class that keeps track of the temperature within an incubator. The UM
 | +decreaseTemperature(boolean) |
 |                               |
 |-------------------------------|
-<pre>
+</pre>
 
 When an Incubator object is created, the temperature is initially set to 5°.
 
