@@ -8,6 +8,7 @@
 3. [Task 1](#task-1)
 4. [Task 2](#task-2)
 5. [Task 3](#task-3)
+5. [Task 4](#task-4)
 
 ---
 
@@ -40,6 +41,7 @@ Reminder<br>
 | -radius: double                    |
 |                                    |
 |------------------------------------|
+|                                    |
 | +CircularShape(double)             |
 | +setRadius(double)                 |
 | +calculateArea(): double           |
@@ -129,7 +131,9 @@ The following methods are also required:
 
 The design of the StockItem class is shown in the following UML diagram:
 
+<pre>
 +----------------------------------------+
+|                                        |
 |               StockItem                |
 |                                        |
 +----------------------------------------+
@@ -151,6 +155,7 @@ The design of the StockItem class is shown in the following UML diagram:
 |+calculateTotalPrice(): double          |
 |                                        |
 +----------------------------------------+
+</pre>
 
 ## Task 3a
 
@@ -158,6 +163,85 @@ Write the code for the StockItem class.
 
 ## Task 3b
 
+Consider the following program, which uses the StockItem class, and in which some of the code has been replaced by comments:
 
+```java
+import java.util.Scanner;
 
+public class TestProg
+{
+    public static void main(String[] args)
+    {
+	Scanner keyboard = new Scanner(System.in);
+	Scanner keyboardString = new Scanner(System.in);
+	String tempNumber;
+	String tempName;
+	double tempPrice;
+    }
 
+    System.out.print("Enter the stock number: ");
+    tempNumber = keyboardString.nextLine();
+    System.out.print("Enter the name of the item: ");
+    tempName = keyboardString.nextLine();
+    System.out.print("Enter the price of the item: ");
+    tempPrice = keyboard.nextDouble();
+
+    // Create a new item of stock using the values that were entered by the user
+
+    // Increase the total number of items in stock by 5
+
+    // Display the stock number
+
+    // Display the total price of all items in stock
+}
+```
+Replace the comments with appropriate code.
+
+## Task 3c
+
+### i
+
+A further attribute, salesTax, is required. The value of this attribute should always be the same for each object of the class. Write the declaration for this attribute.
+
+### ii
+
+Provide a class method, setSalesTax, for this class—it should receive a double and set the value of the sales tax to this value.
+
+### iii
+
+Write a line of code that sets the sales tax for all objects of the class to 10 without referring to any particular object.
+
+# Task 4
+
+The class shown below keeps track of a pressure sensor in a laboratory.
+
+<pre>
+|-------------------------------|
+|                               |
+| Sensor                        |
+|                               |
+|-------------------------------|
+|                               |
+| -pressure: double             |
+|                               |
+|-------------------------------|
+|                               |
+| +Sensor()                     |
+| +Sensor(double)               |
+| +setPressure(double): boolean |
+| +getPressure(): double        |
+|                               |
+|-------------------------------|
+</pre>
+
+When a Sensor object is created using the first constructor, the initial pressure is set to zero. When it is created using the second constructor it is set to the value of the parameter.
+
+The pressure should not be set to a value less than zero. Therefore, if the input parameter to the setPressure method is a negative number, the pressure should not be changed and a value of false should be returned. If the pressure is set successfully, a value of true should be returned.
+
+## Task 4a
+
+Write the code for the Sensor class.
+
+## Task 4b
+
+Develop a SensorTester program to test the Sensor class.
