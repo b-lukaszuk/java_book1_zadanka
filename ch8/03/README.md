@@ -108,3 +108,9 @@ Provide a class method, setSalesTax, for this class—it should receive a double
 ### iii
 
 Write a line of code that sets the sales tax for all objects of the class to 10 without referring to any particular object.
+
+# Program execution
+
+```bash
+java TestProg.java
+```
