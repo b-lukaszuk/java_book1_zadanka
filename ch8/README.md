@@ -8,7 +8,9 @@
 3. [Task 1](#task-1)
 4. [Task 2](#task-2)
 5. [Task 3](#task-3)
-5. [Task 4](#task-4)
+6. [Task 4](#task-4)
+7. [Task 5](#task-5)
+8. [Task 6](#task-6)
 
 ---
 
@@ -248,3 +250,47 @@ Write the code for the Sensor class.
 ## Task 4b
 
 Develop a SensorTester program to test the Sensor class.
+
+# Task 5
+
+Consider a class that keeps track of the temperature within an incubator. The UML diagram is shown below:
+
+<pre>
+|-------------------------------|
+|                               |
+| Incubator                     |
+|                               |
+|-------------------------------|
+|                               |
+| -temperature: int             |
+| +MAX: int                     |
+| ---------                     |
+| +MIN: int                     |
+| ---------                     |
+|                               |
+|-------------------------------|
+|                               |
+| +Incubator()                  |
+| +getTemperature(): int        |
+| +increaseTemperature(boolean) |
+| +decreaseTemperature(boolean) |
+|                               |
+|-------------------------------|
+<pre>
+
+When an Incubator object is created, the temperature is initially set to 5°.
+
+The increaseTemp method increases the temperature by 1, and the decreaseTemp method decreases the temperature by 1. However, the temperature must never be allowed to rise above a maximum value of 10 nor fall below a minimum value of −10. If an attempt is made to increase or decrease the temperature so it falls outside this range, then an alarm must be raised; the methods in this case should not increase or decrease the temperature but should return a value of false, indicating that the alarm should be raised. If the temperature is changed successfully, however, a value of true is returned.
+
+## Task 5a
+
+Write the code for the Incubatotor class.
+
+## Task 5b
+
+Develop a IncubatorTester program to test the Incubator class.
+
+# Task 6
+
+Implement the changes to the Bank class and the BankApplication program suggested in question 4 of the self-test questions. The source code for the Bank class and the BankApplication class can be downloaded from the website.
+
