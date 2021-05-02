@@ -11,6 +11,9 @@
 6. [Task 4](#task-4)
 7. [Task 5](#task-5)
 8. [Task 6](#task-6)
+9. [Task 7](#task-7)
+10. [Task 8](#task-8)
+11. [Task 9](#task-9)
 
 ---
 
@@ -106,9 +109,9 @@ Reminder:
 |---------------------------------|
 </pre>
 
-You should note that in order to ensure that a double is returned from the calculateAverageMark method you should specifically divide the total of the three marks by 3.0 and not simply by 3 (look back at Chap. 2 to remind yourself why this is the case).
+[...]
 
-Another thing to think about is what you choose for the initial values of the marks. If you chose to give each mark an initial value of zero, this could be ambiguous; a mark of zero could mean that the mark simply has not been entered—or it could mean the student actually scored zero in the subject! Can you think of a better initial value?
+Another thing to think about is what you choose for the initial values of the marks. [...] (in the text of the chapter dummy variables, like -999, were used, BL)
 
 You can assume that the fees for the student are set initially to 3000.
 
@@ -118,21 +121,9 @@ Write a tester class to test out your Student class; it should create two or thr
 
 # Task 3
 
-A system is being developed for use in a store that sells electrical appliances. A class called StockItem is required for this system. An object of the StockItem class will require the following attributes:
+A system is being developed for use in a store that sells electrical appliances. A class called StockItem is required for this system.
 
-+ a stock number
-+ a name
-+ the price of the item
-+ the total number of these items currently in stock
-
-The first three of the above attributes will need to be set at the time a StockItem object is created—the total number of items in stock will be set to zero at this time. The stock number and name will not need to be changed after the item is created.
-
-The following methods are also required:
-
-+ a method that allows the price to be re-set during the object’s lifetime;
-+ a method that receives an integer and adds this to the total number of items of this type in stock;
-+ a method that returns the total value of items of this type in stock; this is calculated by multiplying the price of the item by the number of items in stock;
-+ methods to read the values of all four attributes.
+[...]
 
 The design of the StockItem class is shown in the following UML diagram:
 
@@ -239,9 +230,9 @@ The class shown below keeps track of a pressure sensor in a laboratory.
 |-------------------------------|
 </pre>
 
-When a Sensor object is created using the first constructor, the initial pressure is set to zero. When it is created using the second constructor it is set to the value of the parameter.
+When a Sensor object is created using the first constructor, the initial pressure is set to zero. [...]
 
-The pressure should not be set to a value less than zero. Therefore, if the input parameter to the setPressure method is a negative number, the pressure should not be changed and a value of false should be returned. If the pressure is set successfully, a value of true should be returned.
+The pressure should not be set to a value less than zero. [...]
 
 ## Task 4a
 
@@ -280,7 +271,7 @@ Consider a class that keeps track of the temperature within an incubator. The UM
 
 When an Incubator object is created, the temperature is initially set to 5°.
 
-The increaseTemp method increases the temperature by 1, and the decreaseTemp method decreases the temperature by 1. However, the temperature must never be allowed to rise above a maximum value of 10 nor fall below a minimum value of −10. If an attempt is made to increase or decrease the temperature so it falls outside this range, then an alarm must be raised; the methods in this case should not increase or decrease the temperature but should return a value of false, indicating that the alarm should be raised. If the temperature is changed successfully, however, a value of true is returned.
+The increaseTemp method increases the temperature by 1, and the decreaseTemp method decreases the temperature by 1. However, the temperature must never be allowed to rise above a maximum value of 10 nor fall below a minimum value of −10. [...] (if successful incr/decr of temp return true, else false, BL)
 
 ## Task 5a
 
@@ -294,3 +285,124 @@ Develop a IncubatorTester program to test the Incubator class.
 
 Implement the changes to the Bank class and the BankApplication program suggested in question 4 of the self-test questions. The source code for the Bank class and the BankApplication class can be downloaded from the website.
 
+# Task 7
+
+## Task 7a
+
+In programming Exercise 6 of the last chapter you were asked to develop a program to process a collection of rooms in an apartment. Now consider a collection class, Apartment, for this purpose. The Apartment class would store a collection of Oblong objects, where each Oblong object represents a particular room in the apartment. The UML diagram depicting the association between the Apartment class and the Oblong class is shown below:
+
+<pre>
+|-----------------------------|
+|                             |
+| Apartament                  |
+|                             |
+|-----------------------------|
+|                             |
+| -rooms: ArrayList<Oblong>   |
+|                             |
+|-----------------------------|
+|                             |
+| +add(Room)                  |
+| +getRoomArea(int): double   |
+| +getRoomLength(int): double |
+| +getRoomHeight(int): double |
+|                             |
+|-----------------------------|
+       ^
+      / \
+      \ /
+       |
+       |
+       | *
+|-------------------------------|
+|                               |
+| Oblong                        |
+|                               |
+|-------------------------------|
+|                               |
+| -length: double               |
+| -height: double               |
+|                               |
+|-------------------------------|
+|                               |
+| +Oblong(double, double)       |
+| +getLength(): double          |
+| +getHeight(): double          |
+| +setLength(double)            |
+| +setHeight(double)            |
+| +calculateArea(): double      |
+| +calculatePerimeter(): double |
+|                               |
+|-------------------------------|
+</pre>
+
+[...] (get methods return `some dummy value (for example -999)` if an invalid number is entered, BL)
+
+## Task 7b
+
+Develop an ApartmentTester program to test the Apartment class.
+
+# Task 8
+
+Consider a scenario in which a university allows lecturers to borrow equipment. The equipment is available for use 5 days a week and for 7 periods during each day. When the equipment is booked for use, the details of the booking (room number and lecturer name) are recorded. When no booking is recorded, the equipment is available for use.
+
+## Task 8a
+
+Create a Booking class defined in the UML diagram below:
+
+<pre>
+|-----------------------------|
+|                             |
+| Booking                     |
+|                             |
+|-----------------------------|
+|                             |
+| -room: String               |
+| -name: String               |
+|                             |
+|-----------------------------|
+|                             |
+| +Booking(String, String)    |
+| +getRoom(): String          |
+| +getName(): String          |
+|                             |
+|-----------------------------|
+</pre>
+
+## Task 8b
+
+Now a TimeTable class is defined to process these bookings. Its UML diagram is given below:
+
+<pre>
+|------------------------------------------|
+|                                          |
+| TimeTable                                |
+|                                          |
+|------------------------------------------|
+|                                          |
+| -times: Booking[][]                      |
+|                                          |
+|------------------------------------------|
+|                                          |
+| +TimeTable(int, int)                     |
+| +makeBooking(int, int, Booking): boolean |
+| +cancelBooking(int, int): boolean        |
+| +isFree(int, int): boolean               |
+| +getBooking(int, int): Booking           |
+| +numberOfDays(): int                     |
+| +numberOfPeriods(): int                  |
+|                                          |
+|------------------------------------------|
+</pre>
+
+As you can see, the attribute of this class is a two-dimensional array of Booking objects. The methods of this class are defined below:
+
+[...]
+
+## Task 8c
+
+Write a suitable tester for this class.
+
+# Task 9
+
+Add some additional methods such as nextByte and nextLong to the EasyScanner class.
