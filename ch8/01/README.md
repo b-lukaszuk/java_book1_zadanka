@@ -36,9 +36,10 @@ Reminder<br>
 |------------------------------------|
 </pre>
 
+
 ## Task 1b
 
-Add the calculateDiameter method (calculates diameter of the circle) into this class as discussed in self-test question 1d and 1e above.
+Add the calculateDiameter method into this class as discussed in self-test question 1d and 1e above.
 
 ## Task 1c
 

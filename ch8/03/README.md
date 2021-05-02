@@ -11,21 +11,9 @@ Here I'm gonna put the text from the book without the block quote (for better re
 
 # Task 3
 
-A system is being developed for use in a store that sells electrical appliances. A class called StockItem is required for this system. An object of the StockItem class will require the following attributes:
+A system is being developed for use in a store that sells electrical appliances. A class called StockItem is required for this system.
 
-+ a stock number
-+ a name
-+ the price of the item
-+ the total number of these items currently in stock
-
-The first three of the above attributes will need to be set at the time a StockItem object is created—the total number of items in stock will be set to zero at this time. The stock number and name will not need to be changed after the item is created.
-
-The following methods are also required:
-
-+ a method that allows the price to be re-set during the object’s lifetime;
-+ a method that receives an integer and adds this to the total number of items of this type in stock;
-+ a method that returns the total value of items of this type in stock; this is calculated by multiplying the price of the item by the number of items in stock;
-+ methods to read the values of all four attributes.
+[...]
 
 The design of the StockItem class is shown in the following UML diagram:
 

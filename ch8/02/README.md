@@ -50,9 +50,9 @@ Reminder:
 |---------------------------------|
 </pre>
 
-You should note that in order to ensure that a double is returned from the calculateAverageMark method you should specifically divide the total of the three marks by 3.0 and not simply by 3 (look back at Chap. 2 to remind yourself why this is the case).
+[...]
 
-Another thing to think about is what you choose for the initial values of the marks. If you chose to give each mark an initial value of zero, this could be ambiguous; a mark of zero could mean that the mark simply has not been entered—or it could mean the student actually scored zero in the subject! Can you think of a better initial value?
+Another thing to think about is what you choose for the initial values of the marks. [...] (in the text of the chapter dummy variables, like -999, were used, BL)
 
 You can assume that the fees for the student are set initially to 3000.
 
