@@ -4,9 +4,5 @@
 # ignoruj pliki TAGS (etagsy Emacsa)
 /ch6/02/TAGS
 
-# ignoruj pliki *.class
-/ch7/01/classes/*.class
-/ch7/02/customClasses/*.class
-/ch7/04/classes/*.class
-/ch7/05/classes/*.class
-/ch7/06/classes/*.class
+# ignoruj pliki *.class w tym folderze i podfolderach
+**/*.class
