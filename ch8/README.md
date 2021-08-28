@@ -311,19 +311,26 @@ Implement the changes to the Bank class and the BankApplication program suggeste
        |
        |
        | *
-|-------------|
-|             |
-| BankAccount |
-|             |
-|-------------|
-|             |
-| ??          |
-|             |
-|-------------|
-|             |
-| ??          |
-|             |
-|-------------|
+|------------------------------|
+|                              |
+| BankAccount                  |
+|                              |
+|------------------------------|
+|                              |
+| -accountNumber: String       |
+| -accountName: String         |
+| -balance: double             |
+|                              |
+|------------------------------|
+|                              |
+| +BankAccount(String, String) |
+| +getAccountName(): String    |
+| +getAccountNumber(): String  |
+| +getBalance(): double        |
+| +deposit(double)             |
+| +withdraw(double): boolean   |
+|                              |
+|------------------------------|
 <pre>
 
 # Task 7
