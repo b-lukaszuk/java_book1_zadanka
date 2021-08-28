@@ -285,6 +285,47 @@ Develop a IncubatorTester program to test the Incubator class.
 
 Implement the changes to the Bank class and the BankApplication program suggested in question 4 of the self-test questions. The source code for the Bank class and the BankApplication class can be downloaded from the website.
 
+<pre>
+|-----------------------------------------|
+|                                         |
+| Bank                                    |
+|                                         |
+|-----------------------------------------|
+|                                         |
+| -list: ArrayList<BankAccount>           |
+|                                         |
+|-----------------------------------------|
+|                                         |
+| +search(String): int                    |
+| +getTotal(): int                        |
+| +getItem(String): BankAccount           |
+| +addAccount(String, String): boolean    |
+| +depositMoney(String, double): boolean  |
+| +withdrawMoney(String, double): boolean |
+| +removeAccount(String): boolean         |
+|                                         |
+|-----------------------------------------|
+       ^
+      / \
+      \ /
+       |
+       |
+       | *
+|-------------|
+|             |
+| BankAccount |
+|             |
+|-------------|
+|             |
+| ??          |
+|             |
+|-------------|
+|             |
+| ??          |
+|             |
+|-------------|
+<pre>
+
 # Task 7
 
 ## Task 7a
