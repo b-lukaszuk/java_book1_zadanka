@@ -6,3 +6,6 @@
 
 # ignoruj pliki *.class w tym folderze i podfolderach
 **/*.class
+
+# ignoruj pliki w folderze sourceCode
+/sourceCode
