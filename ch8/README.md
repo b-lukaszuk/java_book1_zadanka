@@ -331,7 +331,7 @@ Implement the changes to the Bank class and the BankApplication program suggeste
 | +withdraw(double): boolean   |
 |                              |
 |------------------------------|
-<pre>
+</pre>
 
 # Task 7
 
