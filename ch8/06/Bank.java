@@ -58,13 +58,15 @@ public class Bank {
 	}
 
 	// withdraw money from a specified account
-	public boolean withdrawMoney(String accountNumberIn, double amountIn) {
+	public int withdrawMoney(String accountNumberIn, double amountIn) {
 		BankAccount acc = getItem(accountNumberIn);
-		if (acc != null && acc.getBalance() >= amountIn) {
-			acc.withdraw(amountIn);
-			return true; // indicate success
+		if (acc == null) {
+			return -1; // no such account indicator
+		} else if (acc.getBalance() < amountIn) {
+			return -2; // not enough founds indicator
 		} else {
-			return false; // indicate failure
+			acc.withdraw(amountIn);
+			return 1; // success indicator
 		}
 	}
 
