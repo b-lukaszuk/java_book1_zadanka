@@ -333,6 +333,17 @@ Implement the changes to the Bank class and the BankApplication program suggeste
 |------------------------------|
 </pre>
 
+## Task 6a
+
+Adapt the `withdrawMoney` method so that it distinguishes the two types of failure, i.e.
+no accout exists, and not enough money.
+
+Hint: use int instead of boolean (e.g. 1, -1, -2)
+
+## Task 6b
+
+Adapt the `BankApplication` program so that option 4 uses the new `withdrawMoney` method.
+
 # Task 7
 
 ## Task 7a
