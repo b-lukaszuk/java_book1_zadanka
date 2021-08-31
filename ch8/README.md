@@ -28,6 +28,10 @@ Starting from Chapter 5 (other chapters' exercises were too easy)
 
 Here I'm gonna put the text from the book without the block quote (for better readibility)
 
+### Custom Package Creation in Java
+
+To create custom package follow the instructions placed [here](https://www.w3schools.com/java/java_packages.asp)
+
 # Task 1
 
 ## Task 1a
