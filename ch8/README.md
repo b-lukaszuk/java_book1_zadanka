@@ -401,6 +401,18 @@ In programming Exercise 6 of the last chapter you were asked to develop a progra
 
 [...] (get methods return `some dummy value (for example -999)` if an invalid number is entered, BL)
 
+Here I used the commands:
+
+<pre>
+javac Oblong.java
+javac -d . Oblong.java
+# and
+javac Apartament.java
+javac -d . Apartament.java
+</pre>
+
+As stated [here](https://www.w3schools.com/java/java_packages.asp)
+
 ## Task 7b
 
 Develop an ApartmentTester program to test the Apartment class.
